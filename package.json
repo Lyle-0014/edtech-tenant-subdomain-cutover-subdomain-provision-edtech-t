@@ -1,0 +1,17 @@
+{
+  "name": "edtech-tenant-subdomain-cutover",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/tenant_cutover.ts",
+    "test": "node --experimental-strip-types test/tenant_cutover.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
